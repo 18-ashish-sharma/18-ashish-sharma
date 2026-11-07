@@ -11,7 +11,7 @@ I build cloud platforms as code: Kubernetes on AWS, Terraform from the network u
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/numbers-m-dark.svg">
   <source media="(max-width: 600px)" srcset="assets/numbers-m-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/numbers-dark.svg">
-  <img alt="By the numbers, counted from the public repos: 6 Terraform modules, 6 pipeline definitions (4 GitHub Actions workflows and 2 Azure DevOps pipelines), 26 automated tests (14 pytest, 7 terraform test, 5 JUnit), 0 cloud keys stored in CI." src="assets/numbers-light.svg" width="100%">
+  <img alt="By the numbers, counted from six public repositories: 10 Terraform modules, 19 pipeline definitions (16 GitHub Actions workflows, 1 GitLab CI pipeline, 2 Azure DevOps pipelines), 26 automated tests (13 pytest, 7 terraform test, 5 JUnit, 1 Vitest), 0 cloud keys stored in CI." src="assets/numbers-light.svg" width="100%">
 </picture>
 
 <p>
@@ -20,9 +20,11 @@ I build cloud platforms as code: Kubernetes on AWS, Terraform from the network u
 <a href="https://github.com/18-ashish-sharma/cost-optimisation-terraform/actions/workflows/terraform.yml"><img alt="cost-optimisation CI status" src="https://img.shields.io/github/actions/workflow/status/18-ashish-sharma/cost-optimisation-terraform/terraform.yml?branch=main&style=flat-square&label=cost-optimisation"></a>
 <a href="https://github.com/18-ashish-sharma/azure-java-terraform/actions/workflows/terraform.yml"><img alt="azure-java terraform CI status" src="https://img.shields.io/github/actions/workflow/status/18-ashish-sharma/azure-java-terraform/terraform.yml?branch=main&style=flat-square&label=azure-java%20terraform"></a>
 <a href="https://github.com/18-ashish-sharma/azure-java-terraform/actions/workflows/app.yml"><img alt="azure-java app CI status" src="https://img.shields.io/github/actions/workflow/status/18-ashish-sharma/azure-java-terraform/app.yml?branch=main&style=flat-square&label=azure-java%20app"></a>
+<a href="https://github.com/18-ashish-sharma/aws-terraform-react-js/actions/workflows/terraform.yml"><img alt="aws-terraform-react-js CI status" src="https://img.shields.io/github/actions/workflow/status/18-ashish-sharma/aws-terraform-react-js/terraform.yml?branch=main&style=flat-square&label=aws-react%20static%20site"></a>
+<a href="https://github.com/18-ashish-sharma/azure-react-storage/actions/workflows/terraform.yml"><img alt="azure-react-storage CI status" src="https://img.shields.io/github/actions/workflow/status/18-ashish-sharma/azure-react-storage/terraform.yml?branch=main&style=flat-square&label=azure-react%20storage"></a>
 </p>
 
-<sub>Numbers counted on 7 Nov 2026 from cost-optimisation, azure-java and aws-os-eks-logs; eks-observability-terraform is still being built and is not included. Badges show live pipeline status. Every pull request runs <code>terraform fmt</code>, <code>validate</code>, <code>tflint</code> and <code>checkov</code> (SARIF to the Security tab) without cloud credentials; in the AWS repos <code>gitleaks</code> also runs as a pre-commit hook.</sub>
+<sub>Numbers counted on 7 Nov 2026 from the six repositories featured here. Badges show live pipeline status. Every pull request runs <code>terraform fmt</code>, <code>validate</code>, <code>tflint</code> and <code>checkov</code> (SARIF to the Security tab) without cloud credentials; in the AWS repos <code>gitleaks</code> also runs as a pre-commit hook.</sub>
 
 ## Featured work
 
@@ -53,7 +55,7 @@ I build cloud platforms as code: Kubernetes on AWS, Terraform from the network u
 </picture></a>
 </p>
 
-<sub>Also: <a href="https://github.com/18-ashish-sharma/aws-terraform-react-js">aws-terraform-react-js</a> (React on S3 with Terraform) · <a href="https://github.com/18-ashish-sharma/azure-react-storage">azure-react-storage</a> (React on Azure Storage with Terraform). Both are being tidied up.</sub>
+<sub>Also: <a href="https://github.com/18-ashish-sharma/aws-terraform-react-js">aws-terraform-react-js</a> (React on S3 with Terraform) · <a href="https://github.com/18-ashish-sharma/azure-react-storage">azure-react-storage</a> (React on Azure Storage with Terraform). Both deploy through OIDC with an approval gate.</sub>
 
 <br>
 

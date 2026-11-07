@@ -166,14 +166,15 @@ def banner_m(t):
 # ----------------------------------------------------------------------------- numbers
 # Counted by hand from the default branches of the public repos on 2026-11-07.
 NUMBERS = [
-    ("6", "Terraform modules", "scheduler · budget-alerts", "java-webapp · eks-cluster · …"),
-    ("6", "pipeline definitions", "4 GitHub Actions workflows", "2 Azure DevOps pipelines"),
-    ("26", "automated tests", "14 pytest · 7 terraform test", "5 JUnit"),
+    ("10", "Terraform modules", "in 6 public repositories", "eks · opensearch · finops · …"),
+    ("19", "pipeline definitions", "16 Actions · 1 GitLab CI", "2 Azure DevOps"),
+    ("26", "automated tests", "13 pytest · 7 tf test", "5 JUnit · 1 Vitest"),
     ("0", "cloud keys in CI", "deploys sign in with OIDC;", "checks need no credentials"),
 ]
-NUMBERS_DESC = ("By the numbers, counted from the public repositories: 6 Terraform modules; 6 pipeline definitions "
-                "(4 GitHub Actions workflows and 2 Azure DevOps pipelines); 26 automated tests (14 pytest, 7 terraform "
-                "test runs, 5 JUnit); 0 cloud keys stored in CI, because deploys sign in with OIDC and checks run without credentials.")
+
+NUMBERS_DESC = ("By the numbers, counted from six public repositories: 10 Terraform modules; 19 pipeline definitions "
+                "(16 GitHub Actions workflows, 1 GitLab CI pipeline, 2 Azure DevOps pipelines); 26 automated tests (13 pytest, "
+                "7 terraform test runs, 5 JUnit, 1 Vitest); 0 cloud keys stored in CI, because deploys sign in with OIDC and checks run without credentials.")
 
 
 def numbers(t):
@@ -196,7 +197,7 @@ def numbers_m(t):
     W, H = 800, 520
     cw, ch = 360, 220
     out = []
-    short = ["in 3 repos", "Actions + Azure DevOps", "pytest · tf test · JUnit", "OIDC for every deploy"]
+    short = ["in 6 repos", "Actions · GitLab · ADO", "pytest · tf test · more", "OIDC for every deploy"]
     for i, (n, lab, _s1, _s2) in enumerate(NUMBERS):
         s1 = short[i]
         x = 28 + (i % 2) * (cw + 24)

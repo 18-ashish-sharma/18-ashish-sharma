@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" role="img" aria-labelledby="t d">
+<title id="t">eks-observability-terraform</title>
+<desc id="d">Prometheus and Grafana on EKS from one Terraform codebase across workspaces. CI on GitHub Actions and GitLab CI via OIDC; AWS Budgets guardrails. Tech: EKS, Prometheus, Grafana, OIDC, GitLab CI.</desc>
+<style>
+
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect width="600" height="300" rx="16" fill="#0d1117"/>
+<path d="M0 16 A16 16 0 0 1 16 0 H584 A16 16 0 0 1 600 16 V6 H0 Z" fill="#58a6ff"/>
+<rect x="0" y="0" width="600" height="6" rx="3" fill="#58a6ff"/>
+<g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif">
+<path d="M562.0,47.0 L562.0,77.0 L536.0,92.0 L510.0,77.0 L510.0,47.0 L536.0,32.0 Z" fill="none" stroke="#58a6ff" stroke-width="2.4"/><polyline points="519,71 529,60 538,67 552,50" fill="none" stroke="#3fb950" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="30" y="52" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#8b949e">18-ashish-sharma /</text>
+<text x="30" y="86" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="25" font-weight="700" fill="#58a6ff">eks-observability-terraform</text>
+<text x="30" y="126" font-size="19" fill="#e6edf3">Prometheus and Grafana on EKS from one Terraform</text><text x="30" y="155" font-size="19" fill="#e6edf3">codebase across workspaces. CI on GitHub Actions</text><text x="30" y="184" font-size="19" fill="#e6edf3">and GitLab CI via OIDC; AWS Budgets guardrails.</text>
+<rect x="30" y="220" width="48" height="30" rx="15.0" fill="#1f2937" stroke="#30363d"/><text x="54" y="239.9" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#c9d1d9">EKS</text><rect x="86" y="220" width="107" height="30" rx="15.0" fill="#1f2937" stroke="#30363d"/><text x="139" y="239.9" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#c9d1d9">Prometheus</text><rect x="201" y="220" width="82" height="30" rx="15.0" fill="#1f2937" stroke="#30363d"/><text x="242" y="239.9" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#c9d1d9">Grafana</text><rect x="291" y="220" width="56" height="30" rx="15.0" fill="#1f2937" stroke="#30363d"/><text x="319" y="239.9" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#c9d1d9">OIDC</text><rect x="355" y="220" width="99" height="30" rx="15.0" fill="#1f2937" stroke="#30363d"/><text x="404" y="239.9" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#c9d1d9">GitLab CI</text>
+<circle cx="36" cy="276" r="5" fill="#58a6ff"/>
+<text x="50" y="281" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#8b949e">in progress</text>
+<text x="570" y="281" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#58a6ff">view repo →</text>
+</g>
+<rect x=".75" y=".75" width="598.5" height="298.5" rx="16" fill="none" stroke="#30363d" stroke-width="1.5"/>
+</svg>

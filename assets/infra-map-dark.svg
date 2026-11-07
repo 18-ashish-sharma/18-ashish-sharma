@@ -1,67 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" width="1200" height="580" role="img" aria-labelledby="t d">
 <title id="t">How the work fits together</title>
-<desc id="d">A six-stage loop. 01 Code in Git with pull-request review. 02 CI/CD on GitHub Actions, GitLab CI and Azure DevOps using OIDC instead of static keys. 03 Terraform modules with workspaces and remote state. 04 Cloud: AWS EKS, OpenSearch, Lambda, EventBridge, S3, RDS and IAM, and Azure App Service and PostgreSQL. 05 Observability with Prometheus, Grafana and OpenSearch with SAML SSO. 06 FinOps with AWS Budgets and scheduled EC2 and RDS stop-start. Metrics and spend feed back into the next code change. Each stage names the public repository that shows it.</desc>
+<desc id="d">A six-stage loop. 01 Code in Git with pull-request review. 02 CI/CD on GitHub Actions, GitLab CI and Azure DevOps with OIDC and an approval-gated apply. 03 Terraform modules and remote state, gated by tflint, checkov and gitleaks. 04 Cloud: AWS EKS, Lambda, RDS and IAM, and Azure App Service and Key Vault. 05 Observability: Prometheus, Grafana, Fluent Bit to OpenSearch with SAML sign-in. 06 FinOps: AWS Budgets with SNS alerts and scheduled EC2 and RDS stop-start. Metrics and spend feed the next change. Each stage names the repository that shows it.</desc>
 <style>
-.flow { fill: none; stroke: #8b949e; stroke-width: 1.6; stroke-dasharray: 6 6; animation: dash 1.4s linear infinite; }
-.fb { stroke-dasharray: 2 6; }
-.head { fill: none; stroke: #8b949e; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
-@keyframes dash { to { stroke-dashoffset: -24; } }
+.flow { fill: none; stroke-width: 2.4; stroke-dasharray: 7 7; animation: dash 1.4s linear infinite; }
+@keyframes dash { to { stroke-dashoffset: -28; } }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
 </style>
-<rect width="1000" height="500" rx="14" fill="#0d1117"/>
-<rect x=".5" y=".5" width="999" height="499" rx="14" fill="none" stroke="#30363d"/>
+<rect width="1200" height="580" rx="16" fill="#0d1117"/>
 <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif">
-<text x="25" y="44" font-size="15" font-weight="600" fill="#e6edf3">How the work fits together</text>
-<text x="975" y="44" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#8b949e">every box is code in a public repo</text>
-<path class="flow" d="M319 155.0 H349"/><path d="M342 150.0 L349 155.0 L342 160.0" class="head"/><path class="flow" d="M649 155.0 H679"/><path d="M672 150.0 L679 155.0 L672 160.0" class="head"/><path class="flow" d="M830.0 244 V294"/><path d="M825.0 287 L830.0 294 L835.0 287" class="head"/><path class="flow" d="M681 385.0 H651"/><path d="M658 380.0 L651 385.0 L658 390.0" class="head"/><path class="flow" d="M351 385.0 H321"/><path d="M328 380.0 L321 385.0 L328 390.0" class="head"/><path class="flow fb" d="M170.0 296 V246"/><path d="M165.0 253 L170.0 246 L175.0 253" class="head"/><text x="182.0" y="274.0" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8b949e">metrics + spend feed the next change</text>
-<g>
-<rect x="25" y="70" width="290" height="170" rx="12" fill="#161b22" stroke="#30363d"/>
-<rect x="25" y="84" width="3" height="30" rx="1.5" fill="#7ee787"/>
-<text x="45" y="106" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#7ee787">01</text>
-<text x="73" y="106" font-size="17" font-weight="650" fill="#e6edf3">Code</text>
-<line x1="45" y1="124" x2="295" y2="124" stroke="#21262d"/>
-<text x="45" y="148" font-size="14" fill="#e6edf3">Git, pull-request review</text><text x="45" y="171" font-size="14" fill="#e6edf3">HCL · Python · YAML</text><text x="45" y="194" font-size="14" fill="#e6edf3">plan output read before apply</text>
-<text x="45" y="226" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8b949e">↳ every repo below</text>
-</g><g>
-<rect x="355" y="70" width="290" height="170" rx="12" fill="#161b22" stroke="#30363d"/>
-<rect x="355" y="84" width="3" height="30" rx="1.5" fill="#56d4dd"/>
-<text x="375" y="106" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#56d4dd">02</text>
-<text x="403" y="106" font-size="17" font-weight="650" fill="#e6edf3">CI / CD</text>
-<line x1="375" y1="124" x2="625" y2="124" stroke="#21262d"/>
-<text x="375" y="148" font-size="14" fill="#e6edf3">GitHub Actions · GitLab CI</text><text x="375" y="171" font-size="14" fill="#e6edf3">Azure DevOps Pipelines</text><text x="375" y="194" font-size="14" fill="#e6edf3">OIDC to AWS — no static keys</text>
-<text x="375" y="226" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8b949e">↳ eks-observability-terraform</text>
-</g><g>
-<rect x="685" y="70" width="290" height="170" rx="12" fill="#161b22" stroke="#30363d"/>
-<rect x="685" y="84" width="3" height="30" rx="1.5" fill="#79c0ff"/>
-<text x="705" y="106" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#79c0ff">03</text>
-<text x="733" y="106" font-size="17" font-weight="650" fill="#e6edf3">Infrastructure as Code</text>
-<line x1="705" y1="124" x2="955" y2="124" stroke="#21262d"/>
-<text x="705" y="148" font-size="14" fill="#e6edf3">Terraform modules</text><text x="705" y="171" font-size="14" fill="#e6edf3">workspaces + remote state</text><text x="705" y="194" font-size="14" fill="#e6edf3">dev / stage / prod layouts</text>
-<text x="705" y="226" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8b949e">↳ all four Terraform repos</text>
-</g><g>
-<rect x="685" y="300" width="290" height="170" rx="12" fill="#161b22" stroke="#30363d"/>
-<rect x="685" y="314" width="3" height="30" rx="1.5" fill="#a5a5ff"/>
-<text x="705" y="336" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#a5a5ff">04</text>
-<text x="733" y="336" font-size="17" font-weight="650" fill="#e6edf3">Cloud</text>
-<line x1="705" y1="354" x2="955" y2="354" stroke="#21262d"/>
-<text x="705" y="378" font-size="14" fill="#e6edf3">AWS: EKS · OpenSearch · Lambda</text><text x="705" y="401" font-size="14" fill="#e6edf3">EventBridge · S3 · RDS · IAM</text><text x="705" y="424" font-size="14" fill="#e6edf3">Azure: App Service · PostgreSQL</text>
-<text x="705" y="456" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8b949e">↳ aws-os-eks-logs · azure-java</text>
-</g><g>
-<rect x="355" y="300" width="290" height="170" rx="12" fill="#161b22" stroke="#30363d"/>
-<rect x="355" y="314" width="3" height="30" rx="1.5" fill="#d2a8ff"/>
-<text x="375" y="336" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#d2a8ff">05</text>
-<text x="403" y="336" font-size="17" font-weight="650" fill="#e6edf3">Observability</text>
-<line x1="375" y1="354" x2="625" y2="354" stroke="#21262d"/>
-<text x="375" y="378" font-size="14" fill="#e6edf3">Prometheus · Grafana</text><text x="375" y="401" font-size="14" fill="#e6edf3">OpenSearch for pod logs</text><text x="375" y="424" font-size="14" fill="#e6edf3">SAML SSO via Azure AD</text>
-<text x="375" y="456" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8b949e">↳ eks-observability · aws-os-eks-logs</text>
-</g><g>
-<rect x="25" y="300" width="290" height="170" rx="12" fill="#161b22" stroke="#30363d"/>
-<rect x="25" y="314" width="3" height="30" rx="1.5" fill="#ffa657"/>
-<text x="45" y="336" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#ffa657">06</text>
-<text x="73" y="336" font-size="17" font-weight="650" fill="#e6edf3">FinOps</text>
-<line x1="45" y1="354" x2="295" y2="354" stroke="#21262d"/>
-<text x="45" y="378" font-size="14" fill="#e6edf3">AWS Budgets + alerts</text><text x="45" y="401" font-size="14" fill="#e6edf3">EventBridge → Lambda</text><text x="45" y="424" font-size="14" fill="#e6edf3">scheduled EC2 / RDS stop-start</text>
-<text x="45" y="456" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#8b949e">↳ cost-optimisation-terraform</text>
+<text x="30" y="52" font-size="24" font-weight="650" fill="#e6edf3">How the work fits together</text>
+<text x="1170" y="52" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" fill="#8b949e">every box is code in a public repo</text>
+<path class="flow" stroke="#8b949e" d="M392 172.0 H414"/><path d="M405 165.0 L414 172.0 L405 179.0" fill="none" stroke="#8b949e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path class="flow" stroke="#8b949e" d="M784 172.0 H806"/><path d="M797 165.0 L806 172.0 L797 179.0" fill="none" stroke="#8b949e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path class="flow" stroke="#8b949e" d="M992.0 268 V362"/><path d="M985.0 353 L992.0 362 L999.0 353" fill="none" stroke="#8b949e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path class="flow" stroke="#8b949e" d="M808 460.0 H786"/><path d="M795 453.0 L786 460.0 L795 467.0" fill="none" stroke="#8b949e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path class="flow" stroke="#8b949e" d="M416 460.0 H394"/><path d="M403 453.0 L394 460.0 L403 467.0" fill="none" stroke="#8b949e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path class="flow" stroke="#3fb950" d="M208.0 364 V270"/><path d="M201.0 279 L208.0 270 L215.0 279" fill="none" stroke="#3fb950" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><text x="226.0" y="322.0" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" fill="#3fb950">metrics + spend feed the next change</text>
+<rect x="30" y="82" width="356" height="180" rx="12" fill="#161b22" stroke="#30363d"/>
+<rect x="30" y="100" width="4" height="38" rx="2" fill="#3fb950"/>
+<text x="54" y="128" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="600" fill="#3fb950">01</text>
+<text x="88" y="128" font-size="24" font-weight="650" fill="#e6edf3">Code</text>
+<text x="54" y="170" font-size="19" fill="#e6edf3">Git + pull-request review</text><text x="54" y="201" font-size="19" fill="#e6edf3">plan read before apply</text>
+<text x="54" y="244" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#8b949e">↳ every repo</text><rect x="422" y="82" width="356" height="180" rx="12" fill="#161b22" stroke="#30363d"/>
+<rect x="422" y="100" width="4" height="38" rx="2" fill="#39c5cf"/>
+<text x="446" y="128" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="600" fill="#39c5cf">02</text>
+<text x="480" y="128" font-size="24" font-weight="650" fill="#e6edf3">CI / CD</text>
+<text x="446" y="170" font-size="19" fill="#e6edf3">Actions · GitLab CI · Azure DevOps</text><text x="446" y="201" font-size="19" fill="#e6edf3">OIDC, approval-gated apply</text>
+<text x="446" y="244" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#8b949e">↳ azure-java · eks-observability</text><rect x="814" y="82" width="356" height="180" rx="12" fill="#161b22" stroke="#30363d"/>
+<rect x="814" y="100" width="4" height="38" rx="2" fill="#58a6ff"/>
+<text x="838" y="128" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="600" fill="#58a6ff">03</text>
+<text x="872" y="128" font-size="24" font-weight="650" fill="#e6edf3">Infrastructure as Code</text>
+<text x="838" y="170" font-size="19" fill="#e6edf3">Terraform modules, remote state</text><text x="838" y="201" font-size="19" fill="#e6edf3">tflint · checkov · gitleaks</text>
+<text x="838" y="244" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#8b949e">↳ all Terraform repos</text><rect x="814" y="370" width="356" height="180" rx="12" fill="#161b22" stroke="#30363d"/>
+<rect x="814" y="388" width="4" height="38" rx="2" fill="#a371f7"/>
+<text x="838" y="416" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="600" fill="#a371f7">04</text>
+<text x="872" y="416" font-size="24" font-weight="650" fill="#e6edf3">Cloud</text>
+<text x="838" y="458" font-size="19" fill="#e6edf3">AWS: EKS · Lambda · RDS · IAM</text><text x="838" y="489" font-size="19" fill="#e6edf3">Azure: App Service · Key Vault</text>
+<text x="838" y="532" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#8b949e">↳ aws-os-eks-logs · azure-java</text><rect x="422" y="370" width="356" height="180" rx="12" fill="#161b22" stroke="#30363d"/>
+<rect x="422" y="388" width="4" height="38" rx="2" fill="#db61a2"/>
+<text x="446" y="416" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="600" fill="#db61a2">05</text>
+<text x="480" y="416" font-size="24" font-weight="650" fill="#e6edf3">Observability</text>
+<text x="446" y="458" font-size="19" fill="#e6edf3">Prometheus · Grafana</text><text x="446" y="489" font-size="19" fill="#e6edf3">Fluent Bit → OpenSearch, SAML</text>
+<text x="446" y="532" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#8b949e">↳ eks-observability · aws-os-eks-logs</text><rect x="30" y="370" width="356" height="180" rx="12" fill="#161b22" stroke="#30363d"/>
+<rect x="30" y="388" width="4" height="38" rx="2" fill="#f0883e"/>
+<text x="54" y="416" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="600" fill="#f0883e">06</text>
+<text x="88" y="416" font-size="24" font-weight="650" fill="#e6edf3">FinOps</text>
+<text x="54" y="458" font-size="19" fill="#e6edf3">AWS Budgets + SNS alerts</text><text x="54" y="489" font-size="19" fill="#e6edf3">scheduled EC2 / RDS stop-start</text>
+<text x="54" y="532" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#8b949e">↳ cost-optimisation-terraform</text>
 </g>
-</g>
+<rect x=".75" y=".75" width="1198.5" height="578.5" rx="16" fill="none" stroke="#30363d" stroke-width="1.5"/>
 </svg>

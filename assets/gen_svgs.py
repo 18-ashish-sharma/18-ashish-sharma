@@ -151,7 +151,7 @@ def banner_m(t):
     W, H = 800, 560
     pipe, L = pipeline(t, 80, 470, 600, 24)
     body = f'''{dots(t, W, H)}
-{cluster(t, 650, 120, 32)}
+{cluster(t, 660, 112, 30)}
 <g font-family="{SANS}">
 <text x="56" y="100" font-family="{MONO}" font-size="30" fill="{t["muted"]}"><tspan fill="{t["accent"]}">$</tspan> whoami<tspan class="cur" fill="{t["accent"]}"> ▍</tspan></text>
 <text x="50" y="262" font-size="88" font-weight="700" letter-spacing="-1.5" fill="{t["text"]}">Ashish Sharma</text>
@@ -196,7 +196,9 @@ def numbers_m(t):
     W, H = 800, 520
     cw, ch = 360, 220
     out = []
-    for i, (n, lab, s1, s2) in enumerate(NUMBERS):
+    short = ["in 3 repos", "Actions + Azure DevOps", "pytest · tf test · JUnit", "OIDC for every deploy"]
+    for i, (n, lab, _s1, _s2) in enumerate(NUMBERS):
+        s1 = short[i]
         x = 28 + (i % 2) * (cw + 24)
         y = 28 + (i // 2) * (ch + 24)
         c = t["ramp"][[0, 2, 3, 5][i]]
@@ -204,7 +206,7 @@ def numbers_m(t):
 <rect x="{x}" y="{y + 30}" width="5" height="70" rx="2.5" fill="{c}"/>
 <text x="{x + 28}" y="{y + 96}" font-size="78" font-weight="700" fill="{c}" letter-spacing="-1">{n}</text>
 <text x="{x + 28}" y="{y + 146}" font-size="27" font-weight="600" fill="{t["text"]}">{esc(lab)}</text>
-<text x="{x + 28}" y="{y + 184}" font-family="{MONO}" font-size="18" fill="{t["muted"]}">{esc(s1)}</text>''')
+<text x="{x + 28}" y="{y + 184}" font-family="{MONO}" font-size="19" fill="{t["muted"]}">{esc(s1)}</text>''')
     return svg(W, H, "By the numbers", NUMBERS_DESC, f'<g font-family="{SANS}">{"".join(out)}</g>', "", t)
 
 
@@ -325,7 +327,7 @@ def glyph_app_db(t, x, y):
 
 
 REPOS = [
-    ("eks-observability-terraform", glyph_k8s_chart, "in progress",
+    ("eks-observability-terraform", glyph_k8s_chart, "read-only plan · gated apply",
      ["Prometheus and Grafana on EKS from one Terraform",
       "codebase across workspaces. CI on GitHub Actions",
       "and GitLab CI via OIDC; AWS Budgets guardrails."],

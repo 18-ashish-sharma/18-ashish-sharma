@@ -10,18 +10,18 @@
 <rect x="28" y="58" width="5" height="70" rx="2.5" fill="#1a7f37"/>
 <text x="56" y="124" font-size="78" font-weight="700" fill="#1a7f37" letter-spacing="-1">6</text>
 <text x="56" y="174" font-size="27" font-weight="600" fill="#1f2328">Terraform modules</text>
-<text x="56" y="212" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" fill="#59636e">scheduler · budget-alerts</text><rect x="412" y="28" width="360" height="220" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="56" y="212" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="19" fill="#59636e">in 3 repos</text><rect x="412" y="28" width="360" height="220" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
 <rect x="412" y="58" width="5" height="70" rx="2.5" fill="#0969da"/>
 <text x="440" y="124" font-size="78" font-weight="700" fill="#0969da" letter-spacing="-1">6</text>
 <text x="440" y="174" font-size="27" font-weight="600" fill="#1f2328">pipeline definitions</text>
-<text x="440" y="212" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" fill="#59636e">4 GitHub Actions workflows</text><rect x="28" y="272" width="360" height="220" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="440" y="212" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="19" fill="#59636e">Actions + Azure DevOps</text><rect x="28" y="272" width="360" height="220" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
 <rect x="28" y="302" width="5" height="70" rx="2.5" fill="#8250df"/>
 <text x="56" y="368" font-size="78" font-weight="700" fill="#8250df" letter-spacing="-1">26</text>
 <text x="56" y="418" font-size="27" font-weight="600" fill="#1f2328">automated tests</text>
-<text x="56" y="456" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" fill="#59636e">14 pytest · 7 terraform test</text><rect x="412" y="272" width="360" height="220" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="56" y="456" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="19" fill="#59636e">pytest · tf test · JUnit</text><rect x="412" y="272" width="360" height="220" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
 <rect x="412" y="302" width="5" height="70" rx="2.5" fill="#bc4c00"/>
 <text x="440" y="368" font-size="78" font-weight="700" fill="#bc4c00" letter-spacing="-1">0</text>
 <text x="440" y="418" font-size="27" font-weight="600" fill="#1f2328">cloud keys in CI</text>
-<text x="440" y="456" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" fill="#59636e">deploys sign in with OIDC;</text></g>
+<text x="440" y="456" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="19" fill="#59636e">OIDC for every deploy</text></g>
 <rect x=".75" y=".75" width="798.5" height="518.5" rx="16" fill="none" stroke="#d0d7de" stroke-width="1.5"/>
 </svg>

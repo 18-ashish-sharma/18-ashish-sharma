@@ -15,12 +15,14 @@ I build cloud platforms as code: Kubernetes on AWS, Terraform from the network u
 </picture>
 
 <p>
-<a href="https://github.com/18-ashish-sharma/cost-optimisation-terraform/actions/workflows/terraform.yml"><img alt="cost--optimisation CI status" src="https://img.shields.io/github/actions/workflow/status/18-ashish-sharma/cost-optimisation-terraform/terraform.yml?branch=main&style=flat-square&label=cost--optimisation"></a>
-<a href="https://github.com/18-ashish-sharma/azure-java-terraform/actions/workflows/terraform.yml"><img alt="azure--java%20terraform CI status" src="https://img.shields.io/github/actions/workflow/status/18-ashish-sharma/azure-java-terraform/terraform.yml?branch=main&style=flat-square&label=azure--java%20terraform"></a>
-<a href="https://github.com/18-ashish-sharma/azure-java-terraform/actions/workflows/app.yml"><img alt="azure--java%20app CI status" src="https://img.shields.io/github/actions/workflow/status/18-ashish-sharma/azure-java-terraform/app.yml?branch=main&style=flat-square&label=azure--java%20app"></a>
+<a href="https://github.com/18-ashish-sharma/eks-observability-terraform/actions/workflows/ci.yml"><img alt="eks-observability CI status" src="https://img.shields.io/github/actions/workflow/status/18-ashish-sharma/eks-observability-terraform/ci.yml?branch=main&style=flat-square&label=eks-observability"></a>
+<a href="https://github.com/18-ashish-sharma/aws-os-eks-logs-terraform/actions/workflows/terraform.yml"><img alt="aws-os-eks-logs CI status" src="https://img.shields.io/github/actions/workflow/status/18-ashish-sharma/aws-os-eks-logs-terraform/terraform.yml?branch=main&style=flat-square&label=aws-os-eks-logs"></a>
+<a href="https://github.com/18-ashish-sharma/cost-optimisation-terraform/actions/workflows/terraform.yml"><img alt="cost-optimisation CI status" src="https://img.shields.io/github/actions/workflow/status/18-ashish-sharma/cost-optimisation-terraform/terraform.yml?branch=main&style=flat-square&label=cost-optimisation"></a>
+<a href="https://github.com/18-ashish-sharma/azure-java-terraform/actions/workflows/terraform.yml"><img alt="azure-java terraform CI status" src="https://img.shields.io/github/actions/workflow/status/18-ashish-sharma/azure-java-terraform/terraform.yml?branch=main&style=flat-square&label=azure-java%20terraform"></a>
+<a href="https://github.com/18-ashish-sharma/azure-java-terraform/actions/workflows/app.yml"><img alt="azure-java app CI status" src="https://img.shields.io/github/actions/workflow/status/18-ashish-sharma/azure-java-terraform/app.yml?branch=main&style=flat-square&label=azure-java%20app"></a>
 </p>
 
-<sub>Live pipeline status. Every pull request runs <code>terraform fmt</code>, <code>validate</code>, <code>tflint</code> and <code>checkov</code> (SARIF to the Security tab) without cloud credentials; in the AWS repos <code>gitleaks</code> also runs as a pre-commit hook.</sub>
+<sub>Numbers counted on 7 Nov 2026 from cost-optimisation, azure-java and aws-os-eks-logs; eks-observability-terraform is still being built and is not included. Badges show live pipeline status. Every pull request runs <code>terraform fmt</code>, <code>validate</code>, <code>tflint</code> and <code>checkov</code> (SARIF to the Security tab) without cloud credentials; in the AWS repos <code>gitleaks</code> also runs as a pre-commit hook.</sub>
 
 ## Featured work
 
